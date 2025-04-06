@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link href="library.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>BOOK Library</h2>
+
+      <div class="book_count_container" id="book_count_section">
+        <label for="book_count">How many books?</label>
+        <input type="text" class="book_count" id="book_count" required />
+        <p class="msgerror_number"></p>
+        <button type="button" class="count_btn">OK</button>
+      </div>
+      <div>
+        <form class="form_container" id="book_form">
+          <label for="form_name">Book's Name:</label><br />
+          <input type="text" id="form_name" required />
+          <p class="msgerror_name"></p>
+          <br />
+
+          <label for="form_price">Price:</label><br />
+          <input type="text" id="form_price" required />
+          <p class="msgerror_price"></p>
+          <br />
+
+          <label for="form_author_name">Author Name:</label><br />
+          <input type="text" id="form_author_name" required />
+          <p class="msgerror_author_name"></p>
+          <br />
+
+          <label for="form_email">Author E-mail:</label><br />
+          <input type="text" id="form_email" required />
+          <p class="msgerror_email"></p>
+          <br />
+
+          <button type="submit" id="add_book_btn">Add Book</button>
+        </form>
+      </div>
+      <div>
+        <table id="book_table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Author</th>
+              <th>Author Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="book_list"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="library.js"></script>
+  </body>
+</html>
